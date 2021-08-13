@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соединяем ссылки на файлы с артикулами + номер</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        button {
+            cursor: pointer;
+        }
+        button:hover {
+            background:cadetblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Формирование строк по ссылкам и артикулам</h1>
+        <textarea name="" id="arts" cols="30" rows="10" placeholder="Артикулы сюда"></textarea> 
+        <textarea name="" id="urls" cols="30" rows="10" placeholder="Url сюда"></textarea> <br>
+        <span>Как формируется список: url товара|артикул товара__просто порядковый номер</span><br>
+        <button id="btn">Сформировать список</button>
+    </div>
+  <div class="output">
+      <ul class="list"></ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
